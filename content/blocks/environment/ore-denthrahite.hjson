@@ -1,6 +1,0 @@
-{
-  type: OreBlock
-  itemDrop: "08c-01-denthrahite"
-  variants: 3
-  localizedName: "Denthrahite ore"
-}

@@ -1,6 +1,0 @@
-{
-  type: OreBlock
-  itemDrop: "08c-03-fragileum"
-  variants: 3
-  localizedName: "Fragium Ore"
-}

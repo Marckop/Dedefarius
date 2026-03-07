@@ -1,9 +1,0 @@
-name: Denthrahite hole
-type: SteamVent
-blendGroup: denthrahite-floor
-parent: denthrahite-floor
-effect: ventSteam
-effectColor: 55544f
-attributes: {
-   heat: 0.11111111
-}

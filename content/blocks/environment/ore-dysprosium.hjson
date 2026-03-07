@@ -1,6 +1,0 @@
-{
-  type: OreBlock
-  itemDrop: "08c-00-dysprosium"
-  variants: 3
-  localizedName: "Dysprosium Ore"
-}
