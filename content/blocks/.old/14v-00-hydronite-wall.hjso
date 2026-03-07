@@ -1,0 +1,12 @@
+{
+  "type": "Wall",
+  "name": "Hydronite Wall",
+  "size": 1,
+  "health": 800,
+  "armor": 5,
+  "requirements": [
+    "08c-02-hydronite/6"
+  ],
+  "category": "defense",
+  "research": "02b-00-core-entropy"
+}

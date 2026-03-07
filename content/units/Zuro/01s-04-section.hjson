@@ -1,6 +1,6 @@
 type: flying
 name: Section
-health: 10200
+health: 9000
 armor: 12
 speed: 0.5
 accel: 0.09
@@ -12,7 +12,6 @@ flying: true
 faceTarget: true
 drawCell: true
 outlineColor: 1D1D23
-engineColor: 84F491
 omniMovement: true
 
 trailLength: 40
@@ -23,6 +22,11 @@ itemCapacity: 80
 targetAir: false
 targetGround: true
 range: 240
+
+mineTier: 5
+mineSpeed: 1
+buildSpeed: 10
+itemCapacity: 150
 
 parts: [
   {
@@ -35,8 +39,8 @@ parts: [
     shapes: 100
     sides: 10
     stroke: 3
-    haloRadius: 3
-    haloRadiusTo: 10
+    haloRadius: 10
+    haloRadiusTo: 15
     haloRotateSpeed: 2
   }
 ]
@@ -416,8 +420,6 @@ weapons: [
 research: {
   parent: 01s-02-teta
   requirements: [
-    08c-00-dysprosium/2000
-    08c-01-denthrahite/2500
-    08c-03-fragileum/1500
+    08c-00-silver/2000
   ]
 }

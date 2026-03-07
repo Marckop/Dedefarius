@@ -1,0 +1,52 @@
+{
+  type: flying
+  name: Hatchling
+  controller: MinerAI
+  
+  flying: true
+  drag: 0.08
+  speed: 2.5
+  rotateSpeed: 5
+  accel: 0.1
+  health: 1200
+  armor: 3
+  hitSize: 8
+  engineOffset: 6
+  engineSize: 2
+  buildSpeed: 3
+  outlineColor: 1D1D23
+  
+  targetable: false
+  hittable: true
+  playerControllable: false
+  logicControllable: false
+  useUnitCap: false
+  hidden: true
+  
+  abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 20
+    health: 300
+    regen: 0.5
+    cooldown: 500
+  }
+]
+  
+  weapons: [
+    {
+      x: 0
+      y: 0
+      mirror: false
+      rotate: true
+      reload: 20
+      shootSound: shootElectric
+      bullet: {
+        type: LightningBulletType
+        damage: 8
+        lightningLength: 12
+        lightningColor: 84F491
+      }
+    }
+  ]
+}

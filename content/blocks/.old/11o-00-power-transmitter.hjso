@@ -1,0 +1,18 @@
+type: PowerNode
+name:Power transmitter
+fogRadius: 2
+laserRange: 35
+health: 250
+maxNodes: 5
+size: 2
+squareSprite: true
+researchCostMultiplier: 0.5
+category: power
+research: 11o-01-biodegradable-generator
+requirements: [
+  08c-00-dysprosium/5
+  08c-01-denthrahite/3
+]
+laserScale: 0.0001
+laserColor1: 80A9FF
+laserColor2: 544DEB

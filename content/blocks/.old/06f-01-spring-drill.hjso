@@ -1,0 +1,96 @@
+type: BurstDrill
+name: Spring Drill
+size: 3
+
+category: production
+requirements: [
+  08c-00-dysprosium/120
+]
+
+health: 300
+drillTime: 400
+tier: 2
+hardnessDrillMultiplier: 0
+
+itemCapacity: 20
+
+arrows: 1
+
+
+drillEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 15
+      length: 25
+      lifetime: 30
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: ffaa00
+      colorTo: ff6b00
+      cone: 360
+    }
+    {
+      type: WaveEffect
+      sizeFrom: 0
+      sizeTo: 20
+      lifetime: 20
+      strokeFrom: 2
+      strokeTo: 0
+      colorFrom: ffaa00
+      colorTo: ff6b00
+    }
+  ]
+}
+
+updateEffect: {
+  type: ParticleEffect
+  particles: 1
+  length: 10
+  lifetime: 20
+  sizeFrom: 1.5
+  sizeTo: 0
+  colorFrom: ff6b00
+  colorTo: ffaa00
+}
+updateEffectChance: 0.05
+
+shake: 2
+
+ambientSound: drill
+ambientSoundVolume: 0.04
+
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.08
+  }
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+    type: DrawGlowRegion
+      color: 3de8d4
+      glowIntensity: 0.4
+      glowScale: 6
+      alpha: 0.6
+      }
+      {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+research: {
+  parent: 06f-00-hydraulic-drill
+  requirements: [
+    08c-00-dysprosium/300
+  ]
+}

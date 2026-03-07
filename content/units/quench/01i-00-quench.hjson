@@ -103,7 +103,6 @@ weapons: [
 research: {
   parent: 02b-00-core-entropy
   requirements: [
-    08c-00-dysprosium/120
-    08c-01-denthrahite/90
+    08c-00-silver/120
   ]
 }

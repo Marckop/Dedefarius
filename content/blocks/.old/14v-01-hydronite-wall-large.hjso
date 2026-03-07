@@ -1,0 +1,12 @@
+{
+  "type": "Wall",
+  "name": "Large hydronite Wall",
+  "size": 2,
+  "health": 2080,
+  "armor": 5,
+  "requirements": [
+    "08c-02-hydronite/24"
+  ],
+  "category": "defense",
+  "research": "14v-00-hydronite-wall"
+}

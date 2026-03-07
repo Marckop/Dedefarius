@@ -28,8 +28,8 @@ mineFloor: true
 buildBeamOffset: 3
 
 mineItems: [
-  08c-00-dysprosium
-  08c-01-denthrahite
+  08c-00-silver
+  08c-01-platinum
 ]
 
 targetAir: true
@@ -127,7 +127,6 @@ weapons: [
 research: {
   parent: 01s-00-integrity
   requirements: [
-    08c-00-dysprosium/150
-    08c-01-denthrahite/200
+    08c-00-silver/150
   ]
 }

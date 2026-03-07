@@ -6,10 +6,10 @@
   
 
   requirements: [
-  08c-00-dysprosium/8
+  08c-00-silver/8
 ]
 research: 01a-02-cargo-router
 researchCost: [
-    08c-00-dysprosium/20
+    08c-00-silver/20
   ]
 }

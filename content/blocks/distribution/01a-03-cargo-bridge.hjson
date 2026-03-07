@@ -12,10 +12,10 @@
   itemCapacity: 10
 
   requirements: [
-  08c-00-dysprosium/10
+  08c-00-silver/10
 ]
 research: 01a-01-cargo-junction
 researchCost: [
-    08c-00-dysprosium/30
+    08c-00-silver/30
   ]
 }

@@ -22,7 +22,6 @@ stepShake: 0.3
 legSplashDamage: 8
 legSplashRange: 15
 outlineColor: 1D1D23
-research: 04g-00-ground-workshop
 
 weapons: [
   {

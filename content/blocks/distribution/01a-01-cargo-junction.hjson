@@ -5,9 +5,9 @@ speed: 8
 capacity: 10
 
 requirements: [
-  08c-00-dysprosium/8
+  08c-00-silver/8
 ]
 research: 01a-00-cargo-pipe
 researchCost: [
-    08c-00-dysprosium/15
+    08c-00-silver/15
   ]

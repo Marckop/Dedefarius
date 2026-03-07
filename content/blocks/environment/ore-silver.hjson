@@ -1,0 +1,5 @@
+{
+  type: OreBlock
+  itemDrop: "08c-00-silver"
+  variants: 3
+}

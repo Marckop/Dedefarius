@@ -1,0 +1,75 @@
+type: GenericCrafter
+name: Peat separator
+health: 450
+size: 3
+hasItems: true
+hasLiquids: true
+hasPower: false
+craftTime: 50
+ignoreLiquidFullness: true
+updateEffect: none
+category: crafting
+
+craftEffect: {
+  type: RadialEffect
+  layer: 90
+  rotationSpacing: 60
+  amount: 1
+  lengthOffset: 3
+  effect: {
+    particles: 6
+    length: 40
+    lifetime: 80
+    cone: 30
+    baseRotation: 42
+    useRotation: false 
+    sizeFrom: 6
+    sizeTo: 0.1
+    colorFrom: 24242C
+    colorTo: 24242C
+    sizeInterp: pow2Out
+    interp: pow2Out
+    layer: 110
+  }
+  }
+  
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+consumes: {
+  liquids: {
+    liquids: [
+      12y-00-peat-soil/0.2
+    ]
+  }
+}
+
+outputItem: 08c-04-cured-peat/1
+outputLiquid: water/0.1
+requirements: [
+  08c-00-dysprosium/80
+]
+
+research: {
+  parent: 02b-00-core-entropy
+  objectives: [
+    {
+      type: OnSector
+      preset: 02-growth
+    }
+  ]
+}
+  researchCost: [
+  08c-00-dysprosium/500
+]

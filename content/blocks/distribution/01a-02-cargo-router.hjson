@@ -6,10 +6,10 @@
   speed: 8
 
   requirements: [
-  08c-00-dysprosium/10
+  08c-00-silver/10
 ]
 research: 01a-00-cargo-pipe
 researchCost: [
-    08c-00-dysprosium/50
+    08c-00-silver/50
   ]
 }

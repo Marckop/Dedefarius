@@ -3,8 +3,7 @@ name: Burden
 size: 1
 category: turret
 requirements: [
-  08c-00-dysprosium/30
-  08c-01-denthrahite/25
+  08c-00-silver/30
 ]
 
 health: 350
@@ -86,7 +85,6 @@ shootEffect: {
 research: {
   parent: 13p-00-tract
   requirements: [
-    08c-00-dysprosium/80
-    08c-01-denthrahite/60
+    08c-00-silver/80
   ]
 }

@@ -28,9 +28,8 @@ mineFloor: true
 buildBeamOffset: 3
 
 mineItems: [
-  08c-00-dysprosium
-  08c-01-denthrahite
-  08c-03-fragileum
+  08c-00-silver
+  08c-01-platinum
 ]
 
 targetAir: true

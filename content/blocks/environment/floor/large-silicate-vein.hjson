@@ -1,0 +1,7 @@
+type: Floor
+name: Silicate Vein
+variants: 2
+
+attributes: {
+  silicate: 2.0
+}

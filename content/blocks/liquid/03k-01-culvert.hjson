@@ -1,15 +1,15 @@
 type: Conduit
 name: Culvert
 category: liquid
-research: 03k-00-piston-pump
+research: 02b-00-core-entropy
 requirements: [
-  08c-00-dysprosium/1
-  08c-01-denthrahite/2
+  08c-00-silver/1
+  08c-01-platinum/2
 ]
 health: 35
 squareSprite: false
 solid: false
-leaks: true
+leaks: false
 junctionReplacement: 03k-02-culvert-junction
 bridgeReplacement: 03k-03-culvert-bridge
 underBullets: true

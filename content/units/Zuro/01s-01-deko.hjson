@@ -28,9 +28,8 @@ mineFloor: true
 buildBeamOffset: 3
 
 mineItems: [
-  08c-00-dysprosium
-  08c-01-denthrahite
-  08c-03-fragileum
+  08c-00-silver
+  08c-01-platinum
 ]
 
 targetAir: true
@@ -91,8 +90,6 @@ weapons: [
 research: {
   parent: 01s-00-zuro
   requirements: [
-    08c-00-dysprosium/400
-    08c-01-denthrahite/500
-    08c-03-fragileum/300
+    08c-00-silver/400
   ]
 }

@@ -13,10 +13,10 @@ placeableOn: true
 
 
   requirements: [
-  08c-00-dysprosium/2
+  08c-00-silver/2
 ]
 research: 02b-00-core-entropy
 researchCost: [
-    08c-00-dysprosium/10
+    08c-00-silver/10
   ]
 }

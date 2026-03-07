@@ -1,0 +1,94 @@
+type: ConsumeGenerator
+name: Biodegradable generator
+description: Generates base power, consumes Peat Soil
+size: 2
+health: 300
+powerProduction: 3
+liquidCapacity: 30
+hasLiquids: true
+hasItems: false
+
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+
+consumes: {
+  liquid: {
+    liquid: 12y-00-peat-soil
+    amount: 0.1
+  }
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: 12y-00-peat-soil
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 7
+      spinSprite: true
+    }
+    {
+      type: DrawFlame
+      flameColor: FFB06C
+      flameRadiusIn: 0.3
+      flameRadiusMag: 0.4
+      flameRadiusScl: 8
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+ambientSound: hum
+ambientSoundVolume: 0.08
+
+requirements: [
+  08c-00-dysprosium/100
+  08c-01-denthrahite/30
+]
+
+category: power
+research: {
+  parent: 02b-00-core-entropy
+  objectives: [
+    {
+      type: OnSector
+      preset: 02-growth
+    }
+  ]
+}
+  researchCost: [
+  08c-00-dysprosium/650
+  08c-01-denthrahite/300
+]

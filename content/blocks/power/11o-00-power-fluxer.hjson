@@ -1,0 +1,15 @@
+type: PowerNode
+name: Power Fluxer
+size: 1
+health: 120
+maxNodes: 10
+laserRange: 8
+laserColor1: 8BC5FF
+laserColor2: FFFFFF
+
+requirements: [
+  08c-00-silver/5
+]
+
+category: power
+research: 02b-00-core-entropy

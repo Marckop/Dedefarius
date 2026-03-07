@@ -213,7 +213,5 @@ shootType: {
 }
 
 requirements: [
-  08c-00-dysprosium/100
-  08c-01-denthrahite/125
-  08c-02-hydronite/50
+  08c-00-silver/100
 ]

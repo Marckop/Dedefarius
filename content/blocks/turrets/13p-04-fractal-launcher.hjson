@@ -4,8 +4,7 @@ size: 2
 
 category: turret
 requirements: [
-  08c-00-dysprosium/100
-  08c-01-denthrahite/80
+  08c-00-silver/100
 ]
 
 health: 800
@@ -25,7 +24,7 @@ targetAir: false
 targetGround: true
 
 ammoTypes: {
-  08c-01-denthrahite: {
+  08c-01-platinum: {
     type: BasicBulletType
     speed: 3
     lifetime: 60

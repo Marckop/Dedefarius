@@ -1,0 +1,68 @@
+type: BurstDrill
+name: Hydraulic Drill
+size: 3
+tier: 1
+drillTime: 100
+itemCapacity: 30
+shake: 2
+arrows: 3
+arrowSpacing: 4
+arrowOffset: 2
+glowIntensity: 0.6
+glowColor: FFA500
+pulseIntensity: 0.1
+liquidCapacity: 20
+
+invertedTime: 200
+baseEfficiency: 0
+hardnessDrillMultiplier: 0
+
+consumes: {
+  liquid: {
+    liquid: oil
+    amount: 0.1
+  }
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: oil
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+drillEffect: {
+  type: ParticleEffect
+  particles: 8
+  length: 20
+  lifetime: 30
+  sizeFrom: 3
+  sizeTo: 0
+  colorFrom: FFA500
+  colorTo: FF6B00
+  cone: 360
+}
+
+requirements: [
+  08c-00-dysprosium/25/150
+]
+
+category: production
+research: 02b-00-core-entropy

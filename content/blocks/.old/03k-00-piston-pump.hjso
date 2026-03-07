@@ -1,0 +1,33 @@
+type: Pump
+name: Piston pump
+size: 2
+health: 400
+liquidCapacity: 30
+pumpAmount: 0.05
+
+requirements: [
+  08c-00-dysprosium/15
+  08c-01-denthrahite/20
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -top 
+    }
+  ]
+}
+
+category: liquid
+research: 02b-00-core-entropy

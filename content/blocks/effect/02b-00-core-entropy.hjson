@@ -1,7 +1,7 @@
 type: CoreBlock
 name: Core: Entropy
 requirements: [
-  08c-00-dysprosium/1600
+  08c-00-silver/1600
 ]
 isFirstTier: true
 size: 4

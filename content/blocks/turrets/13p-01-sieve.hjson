@@ -21,7 +21,7 @@ shoot: {
 }
 
 ammoTypes: {
-  08c-01-denthrahite: {
+  08c-01-platinum: {
     type: BasicBulletType
     lifetime: 30
     speed: 5.5
@@ -127,8 +127,7 @@ ammoTypes: {
 
 
 requirements: [
-  08c-01-denthrahite/120
-  08c-00-dysprosium/80
+  08c-00-silver/80
 ]
 
 category: turret
@@ -136,7 +135,6 @@ category: turret
 research: {
   parent: 13p-00-tract
   requirements: [
-    08c-00-dysprosium/200
-    08c-01-denthrahite/320
+    08c-00-silver/200
   ]
 }

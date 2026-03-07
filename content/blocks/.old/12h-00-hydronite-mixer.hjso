@@ -1,0 +1,82 @@
+type: GenericCrafter
+name: Hydronite Mixer
+health: 450
+size: 2
+hasItems: true
+hasLiquids: true
+hasPower: true
+craftTime: 50
+updateEffect: none
+category: crafting
+
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 5
+      lifetime: 150
+      length: 15
+      sizeFrom: 1
+      sizeTo: 0.1
+      colorFrom: 80A9FF
+      colorTo: 000000
+      interp: pow3Out
+      sizeInterp: pow2In
+    }
+  ]
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: water
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 5
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+consumes: {
+  power: 1.7
+  items: {
+    items: [
+      08c-01-denthrahite/5
+    ]
+  }
+  liquids: {
+    liquids: [
+      water/0.1
+    ]
+  }
+}
+
+outputItem: 08c-02-hydronite/2
+
+requirements: [
+  08c-00-dysprosium/80
+  08c-01-denthrahite/40
+]
+
+research: {
+    parent: 12h-01-peat-separator
+}
+  researchCost: [
+  08c-00-dysprosium/500
+  08c-01-denthrahite/200
+]

@@ -1,0 +1,11 @@
+type: WallCrafter
+name: Mica miner
+size: 2
+category: production
+requirements: [
+  08c-00-dysprosium/45
+]
+drillTime: 350
+output: 08c-05-mica
+attribute: mica
+squareSprite: false

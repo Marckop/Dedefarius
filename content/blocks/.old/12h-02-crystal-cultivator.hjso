@@ -1,0 +1,107 @@
+type: GenericCrafter
+name: Crystal Cultivator
+size: 3
+
+category: crafting
+requirements: [
+  08c-00-dysprosium/180
+]
+health: 600
+craftTime: 360
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 20
+      length: 30
+      lifetime: 40
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: A3F9D3
+      colorTo: A3F9D3
+      cone: 360
+    }
+    {
+      type: WaveEffect
+      sizeFrom: 0
+      sizeTo: 30
+      lifetime: 30
+      strokeFrom: 3
+      strokeTo: 0
+      colorFrom: A3F9D3
+      colorTo: A3F9D3
+    }
+    {
+      type: ParticleEffect
+      particles: 15
+      length: 20
+      lifetime: 50
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: A3F9D3
+      cone: 360
+    }
+  ]
+}
+
+updateEffect: {
+  type: ParticleEffect
+  particles: 2
+  length: 15
+  lifetime: 40
+  sizeFrom: 2
+  sizeTo: 0
+  colorFrom: A3F9D3
+  colorTo: A3F9D3
+  cone: 360
+  offset: 12
+}
+updateEffectChance: 0.08
+
+ambientSound: loopHum
+ambientSoundVolume: 0.06
+
+consumes: {
+  items: {
+    items: [
+      08c-03-fragileum/2
+    ]
+  }
+}
+
+outputItem: {
+  item: 08c-01-denthrahite
+  amount: 3
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+          type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawFlame
+      flameColor: A3F9D3
+      flameRadius: 3
+      flameRadiusIn: 1.5
+      flameRadiusScl: 5
+      flameRadiusMag: 0.8
+    }
+  ]
+}
+
+research: {
+  parent: 12h-01-peat-separator
+  requirements: [
+    08c-00-dysprosium/400
+    08c-02-hydronite/50
+  ]
+}

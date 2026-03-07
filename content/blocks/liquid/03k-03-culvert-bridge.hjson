@@ -1,14 +1,12 @@
 type: LiquidBridge
-name: culvert Bridge
-fadeIn: false
-moveArrows: false
-arrowSpacing: 6
-range: 4
-hasPower: false
+size: 1
+health: 65
+range: 3
 category: liquid
+squareSprite: false
 research: 03k-01-culvert
 requirements: [
-  08c-00-dysprosium/10
-  08c-01-denthrahite/10
+  08c-00-silver/10
+  08c-01-platinum/10
 ]
 researchCostMultiplier: 0.5

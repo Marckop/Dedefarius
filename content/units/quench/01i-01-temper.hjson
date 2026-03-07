@@ -207,8 +207,6 @@ weapons: [
 research: {
   parent: 01i-00-quench
   requirements: [
-    08c-00-dysprosium/300
-    08c-01-denthrahite/250
-    08c-03-fragileum/200
+    08c-00-silver/300
   ]
 }

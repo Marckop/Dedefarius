@@ -1,0 +1,31 @@
+type: UnitFactory
+size: 3
+name: Airfield Workshop
+category: units
+requirements: [
+  08c-00-dysprosium/200
+  08c-01-denthrahite/300
+]
+
+plans: [
+  {
+    unit: 01u-00-tamer
+    time: 1800
+    requirements: [
+      08c-00-dysprosium/30
+      08c-01-denthrahite/40
+    ]
+  }
+]
+
+consumes: {
+  power: 1.5
+}
+
+research: {
+  parent: 02b-00-core-entropy
+  requirements: [
+    08c-00-dysprosium/400
+    08c-01-denthrahite/500
+  ]
+}

@@ -9,7 +9,7 @@ category: liquid
 squareSprite: false
 research: 03k-02-culvert-junction
 requirements: [
-  08c-00-dysprosium/5
-  08c-01-denthrahite/10
+  08c-00-silver/5
+  08c-01-platinum/10
 ]
 researchCostMultiplier: 0.5
