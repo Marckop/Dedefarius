@@ -35,6 +35,13 @@ mineItems: [
 targetAir: true
 targetGround: true
 range: 100
+research: {
+  parent: 01s-01-deko
+  requirements: [
+    08c-00-silver/150
+  ]
+}
+
 weapons: [
   {
     name: 01s-02-teta-cannon

@@ -36,6 +36,12 @@ parts: [
 targetAir: true
 targetGround: true
 range: 250
+research: {
+  parent: 01s-02-teta
+  requirements: [
+    08c-00-silver/150
+  ]
+}
 
 weapons: [
   {

@@ -1,10 +1,15 @@
 name: "dedefarius"
 displayName: "Dedefarius"
-author: Marckop
-description: ""
-version: "0.2.4"
-minGameVersion: "154"
-dependencies: [ ]
+author: "Marckop"
+description: 
+'''
+  This mod adds a new storyline campaign for the planet [[]#4a4358]Dedefarius.[[]]
+
+  [[]#ff5555]!The mod may contain many bugs and imperfections as it is in alpha![[]]
+
+  Alpha 0.3.1 By [[]#ff8080]Marckop[]
+'''
+version: "0.3.1"
+minGameVersion: "159"
 hidden: false
-subtitle: trial run
-hiddenMaps: true
+subtitle: "[[]#87ceeb]Windmills boom[]"

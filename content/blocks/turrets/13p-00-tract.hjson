@@ -3,96 +3,77 @@ name: Tract
 size: 2
 health: 800
 reload: 25
-range: 140
-inaccuracy: 20
-shootCone: 15
+range: 80
+inaccuracy: 5
+shootCone: 5
 rotateSpeed: 3
 targetAir: false
 targetGround: true
-shootSound: shoot
+shootSound: tractshoot
 
 ammoTypes: {
   08c-00-silver: {
     type: BasicBulletType
-    damage: 6
-    speed: 5
-    lifetime: 35
-    width: 7
-    height: 9
-    frontColor: FFBAF1
-    backColor: F376FF
+    damage: 14
+    speed: 6.5
+    lifetime: 15
+    width: 9
+    height: 13
+    frontColor: AAAAAA
+    backColor: 777777
     
     shootEffect: {
       type: ParticleEffect
-      particles: 5
-      length: 15
-      lifetime: 20
-      sizeFrom: 2
+      particles: 7
+      length: 20
+      lifetime: 22
+      sizeFrom: 3
       sizeTo: 0
-      colorFrom: FFBAF1
-      colorTo: F376FF
-      cone: 25
+      colorFrom: CCCCCC
+      colorTo: 888888
+      cone: 20
     }
     
     smokeEffect: shootSmallSmoke
     
     hitEffect: {
       type: ParticleEffect
-      particles: 8
-      length: 20
-      lifetime: 18
-      sizeFrom: 2.5
-      sizeTo: 0
-      colorFrom: FFBAF1
-      colorTo: F376FF
-      cone: 360
-    }
-  }
-  
-  08c-01-platinum: {
-    type: BasicBulletType
-    damage: 16
-    speed: 5
-    lifetime: 35
-    width: 7
-    height: 9
-    frontColor: 7FFFD4
-    backColor: 3CB371
-    
-    shootEffect: {
-      type: ParticleEffect
-      particles: 5
-      length: 15
+      particles: 10
+      length: 25
       lifetime: 20
-      sizeFrom: 2
+      sizeFrom: 3
       sizeTo: 0
-      colorFrom: 7FFFD4
-      colorTo: 3CB371
-      cone: 25
-    }
-    
-    smokeEffect: shootSmallSmoke
-    
-    hitEffect: {
-      type: ParticleEffect
-      particles: 8
-      length: 20
-      lifetime: 18
-      sizeFrom: 2.5
-      sizeTo: 0
-      colorFrom: 7FFFD4
-      colorTo: 3CB371
+      colorFrom: CCCCCC
+      colorTo: 555555
       cone: 360
     }
   }
 }
 
+drawer: {
+  type: DrawTurret
+  basePrefix: tract-
+  parts: [
+    {
+    type: RegionPart
+    suffix: -hand
+    mirror: true
+    progress: warmup
+    moveY: -2
+    moveX: 1
+    moveRot: -25
+    }
+  ]
+}
+
 requirements: [
   08c-00-silver/120
+  08c-01-platinum/20
 ]
 
 category: turret
 research: 02b-00-core-entropy
 researchCost: [
-  08c-00-silver/150
+  08c-00-silver/100
+  08c-01-platinum/45
 ]

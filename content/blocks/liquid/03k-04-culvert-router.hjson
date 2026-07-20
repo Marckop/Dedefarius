@@ -7,7 +7,7 @@ health: 45
 liquidCapacity: 20
 category: liquid
 squareSprite: false
-research: 03k-02-culvert-junction
+research: 03k-01-culvert
 requirements: [
   08c-00-silver/5
   08c-01-platinum/10

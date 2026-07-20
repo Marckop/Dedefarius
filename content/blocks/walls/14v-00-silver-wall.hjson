@@ -1,0 +1,17 @@
+{
+  type: "Wall",
+  name: "Silver Wall",
+  size: 1,
+  health: 500,
+  armor: 5,
+  requirements: [
+    08c-00-silver/6
+  ],
+  category: defense,
+  research: {
+  parent: 02b-00-core-entropy
+  requirements: [
+    08c-00-silver/16
+  ]
+}
+}

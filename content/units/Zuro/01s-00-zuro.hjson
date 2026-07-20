@@ -125,7 +125,7 @@ weapons: [
 ]
 
 research: {
-  parent: 01s-00-integrity
+  parent: 01s-00-integrit
   requirements: [
     08c-00-silver/150
   ]

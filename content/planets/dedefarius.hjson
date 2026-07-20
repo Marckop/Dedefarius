@@ -103,17 +103,18 @@ cloudMesh: [
 ]
 
 generator: {
-  octaves: 4
-  persistence: 0.6
-  scale: 18
-  mag: 0.8
-  thresh: 1.1
+  octaves: 3
+  persistence: 0.52
+  scale: 22
+  mag: 0.721
+  thresh: 1.152
   min: 100
   max: 100
   radMin: 220
   radMax: 600
 }
 
+launchCandidates: []
 orbitRadius: 120
 sectorSize: 1
 allowLaunchSchematics: false
@@ -138,7 +139,6 @@ hasAtmosphere: true
 clearSectorOnLose: true
 allowWaves: true
 prebuildBase: false
-defaultCore: 02b-00-core-entropy 
+defaultCore: core-shard
 parent: sun
 solarSystem: sun
-launchCandidates: []

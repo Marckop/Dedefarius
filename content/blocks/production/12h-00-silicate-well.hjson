@@ -1,0 +1,51 @@
+type: Fracker
+name: Silicate Well
+size: 2
+health: 500
+liquidCapacity: 40
+pumpAmount: 0.15
+result: 12y-00-silicate
+attribute: silicate
+
+updateEffect: {
+  type: ParticleEffect
+  particles: 3
+  length: 10
+  lifetime: 30
+  sizeFrom: 2
+  sizeTo: 0
+  colorFrom: FFFFFF
+  colorTo: E0E0E0
+  cone: 360
+}
+
+requirements: [
+  08c-00-silver/80
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: 12y-00-silicate
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 5
+      }
+      {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+category: production
+research: 02b-00-core-entrop

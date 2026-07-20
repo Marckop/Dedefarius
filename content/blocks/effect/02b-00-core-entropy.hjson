@@ -15,6 +15,7 @@ category: effect
 research: {
   planet: dedefarius
   root: true
-  name: Dedefarius
+  name: dedefarius
   requiresUnlock: false
 }
+

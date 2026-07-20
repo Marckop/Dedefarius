@@ -1,0 +1,9 @@
+captureWave: 10
+difficulty: 1
+planet: dedefarius
+alwaysUnlocked: true
+unlocked: true
+sector: 1
+research: {
+    parent: 02b-00-core-entropy
+}

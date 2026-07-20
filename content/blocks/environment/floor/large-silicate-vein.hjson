@@ -3,5 +3,5 @@ name: Silicate Vein
 variants: 2
 
 attributes: {
-  silicate: 2.0
+  silicate: 10
 }

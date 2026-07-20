@@ -1,0 +1,104 @@
+type: ItemTurret
+size: 2
+health: 800
+reload: 10
+range: 70
+inaccuracy: 2
+shootCone: 5
+rotateSpeed: 5
+targetAir: true
+targetGround: true
+recoil: 1.5
+minWarmup: 0.95
+warmupMaintainTime: 30
+shootWarmupSpeed: 0.05
+shootSound: tractshoot
+      shoot: {
+      type: ShootHelix
+      mag: 1
+      scl: 3
+    }
+
+ammoTypes: {
+  08c-01-platinum: {
+      type: BasicBulletType
+      buildingDamageMultiplier: 0.3
+      width: 12
+      height: 12
+      pierceCap: 3
+      lifetime: 25
+      damage: 10.3
+      speed: 3
+      ammoMultiplier: 1
+      shootEffect: colorSpark
+      smokeEffect: colorSpark
+      trailColor: 7D8CB2
+      trailWidth: 1.5
+      trailLength: 6
+      backColor: 7D8CB2
+      hitColor: 7D8CB2
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 9
+        sizeFrom: 0
+        sizeTo: 20
+        colorFrom: ffffff
+        colorTo: 7D8CB2
+   }
+   
+    shootEffect: {
+      type: ParticleEffect
+      particles: 7
+      length: 20
+      lifetime: 22
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: CCCCCC
+      colorTo: 888888
+      cone: 20
+    }
+    
+    smokeEffect: shootSmallSmoke
+    
+    hitEffect: {
+      type: ParticleEffect
+      particles: 10
+      length: 25
+      lifetime: 20
+      sizeFrom: 3
+      sizeTo: 0
+      colorFrom: CCCCCC
+      colorTo: 555555
+      cone: 360
+    }
+  }
+}
+
+drawer: {
+  type: DrawTurret
+  basePrefix: tract-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      moveY: -1
+      heatColor: FFB76B
+    }
+  ]
+}
+
+requirements: [
+  08c-00-silver/24
+  08c-01-platinum/65
+]
+
+category: turret
+research: 13p-00-tract
+researchCost: [
+  08c-00-silver/50
+  08c-01-platinum/120
+]

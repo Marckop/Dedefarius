@@ -1,15 +1,20 @@
 type: PowerNode
 name: Power Fluxer
 size: 1
-health: 120
-maxNodes: 10
-laserRange: 8
-laserColor1: 8BC5FF
-laserColor2: FFFFFF
+health: 80
+laserColor1: 87CEEB
+laserColor2: C0ECFF
 
 requirements: [
   08c-00-silver/5
+  08c-01-platinum/2
 ]
 
 category: power
-research: 02b-00-core-entropy
+research: {
+  parent: 11o-01-tiny-windmill
+  requirements: [
+    08c-00-silver/10
+    08c-01-platinum/5
+  ]
+}

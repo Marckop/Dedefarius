@@ -101,7 +101,7 @@ weapons: [
 ]
 
 research: {
-  parent: 02b-00-core-entropy
+  parent: 02b-00-core-entrop
   requirements: [
     08c-00-silver/120
   ]

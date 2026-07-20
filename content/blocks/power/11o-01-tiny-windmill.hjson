@@ -1,0 +1,43 @@
+type: ConsumeGenerator
+name: Tiny Windmill
+size: 1
+health: 200
+powerProduction: 0.2
+hasLiquids: false
+hasItems: false
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 4
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+
+ambientSound: wind
+ambientSoundVolume: 0.08
+
+requirements: [
+  08c-00-silver/40
+  08c-01-platinum/20
+]
+
+category: power
+research: {
+  parent: 02b-00-core-entropy
+  requirements: [
+    08c-00-silver/48
+    08c-01-platinum/24
+  ]
+}

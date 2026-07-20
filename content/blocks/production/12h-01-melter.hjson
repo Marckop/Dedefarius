@@ -1,0 +1,81 @@
+type: GenericCrafter
+name: melter
+health: 450
+size: 3
+hasItems: true
+hasLiquids: true
+hasPower: true
+craftTime: 50
+updateEffect: none
+category: production
+consumes: {
+  power: 0.4
+}
+
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      particles: 10
+      lifetime: 300
+      length: 15
+      sizeFrom: 1
+      sizeTo: 0.1
+      colorFrom: FFB06C
+      colorTo: 000000
+      interp: pow3Out
+      sizeInterp: pow2In
+      line: true
+    }
+  ]
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: water
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+        {
+      type: DrawFlame
+      flameColor: FFB06C
+      flameRadiusIn: 0.3
+      flameRadiusMag: 0.4
+      flameRadiusScl: 8
+    }
+  ]
+}
+
+consumes: {
+  power: 0.3
+  liquid: {
+    liquid: 12y-00-silicate
+    amount: 3
+  }
+}
+
+outputItem: 08c-02-synthetic/1
+
+requirements: [
+  08c-00-silver/75
+  08c-01-platinum/20
+]
+
+research: {
+    parent: 12h-00-silicate-wel
+}
+  researchCost: [
+  08c-00-silver/500
+  08c-01-platinum/200
+]

@@ -10,17 +10,15 @@ rotateSpeed: 10
 lowAltitude: true
 flying: true
 mineTier: 2
-mineSpeed: 4.5
+mineSpeed: 6
 buildSpeed: 1.2
 coreUnitDock: true
 drawCell: true
 outlineColor: 1D1D23
-engineColor: 80A9FF
 engineOffset: 6
 engineSize: 3.5
 trailLength: 5
-trailColor: 80A9FF
-mineWalls: true
+mineWalls: false
 mineFloor: true
 mineHardnessScaling: true
 

@@ -22,6 +22,12 @@ stepShake: 0.3
 legSplashDamage: 8
 legSplashRange: 15
 outlineColor: 1D1D23
+research: {
+  parent: 02b-00-core-entrop
+  requirements: [
+    08c-00-silver/150
+  ]
+}
 
 weapons: [
   {
@@ -37,7 +43,7 @@ weapons: [
     shootSound: beamMeltdown
     recoil: 2
     shake: 1
-    shootY: 5
+    shootY: 0
     top: false
     
     shoot: {
@@ -45,12 +51,16 @@ weapons: [
     }
     
     bullet: {
-      type: ContinuousLaserBulletType
-      damage: 8
+      type: ContinuousFlameBulletType
+      damage: 20
       length: 80
       width: 2.5
       lifetime: 80
       drawSize: 100
+      flareLength: 0
+      pierceCap: 3
+      hitEffect: none
+      despawnEffect: none
       pierce: false
       
       colors: [

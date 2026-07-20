@@ -1,0 +1,73 @@
+type: BurstDrill
+name: Rotary drill
+size: 2
+tier: 1
+drillTime: 500
+itemCapacity: 30
+shake: 1
+
+arrows: 0
+glowColor: FFFFFF
+glowIntensity: 10
+
+invertedTime: 250
+baseEfficiency: 0
+hardnessDrillMultiplier: 0
+
+consumes: {
+  power: 0.1
+}
+
+drillEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      sizeFrom: 0
+      sizeTo: 10
+      lifetime: 30
+      strokeFrom: 3
+      strokeTo: 0
+      colorFrom: FFFFFF
+      colorTo: E0E0E0
+    }
+    {
+      type: ParticleEffect
+      particles: 10
+      length: 40
+      lifetime: 240
+      sizeFrom: 2
+      sizeTo: 0
+      colorFrom: FFFFFF
+      colorTo: FFFFFF
+      cone: 360
+      interp: pow3Out
+    }
+  ]
+}
+
+updateEffect: {
+  type: ParticleEffect
+  particles: 4
+  length: 20
+  lifetime: 200
+  sizeFrom: 3
+  sizeTo: 0
+  colorFrom: FFFFFF
+  colorTo: FFFFFF
+  cone: 360
+}
+
+updateEffectChance: 0.15
+
+requirements: [
+  08c-00-silver/65
+]
+
+category: production
+research: {
+  parent: 02b-00-core-entropy
+  requirements: [
+    08c-00-silver/40
+  ]
+}

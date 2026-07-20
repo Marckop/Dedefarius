@@ -27,7 +27,6 @@
   {
     type: ForceFieldAbility
     radius: 20
-    health: 300
     regen: 0.5
     cooldown: 500
   }

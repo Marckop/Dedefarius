@@ -1,0 +1,17 @@
+{
+  type: Wall,
+  name: Large Silver Wall,
+  size: 2,
+  health: 1080,
+  armor: 5,
+  requirements: [
+    08c-00-silver/24
+  ],
+  category: defense,
+  research: {
+  parent: 14v-00-silver-wall
+  requirements: [
+    08c-00-silver/32
+  ]
+}
+}

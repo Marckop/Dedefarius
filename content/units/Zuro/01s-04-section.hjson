@@ -418,7 +418,7 @@ weapons: [
 ]
 
 research: {
-  parent: 01s-02-teta
+  parent: 01s-03-brightener
   requirements: [
     08c-00-silver/2000
   ]
