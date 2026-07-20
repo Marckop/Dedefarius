@@ -40,7 +40,7 @@ Events.on(ClientLoadEvent, () => {
                     }
                 }
 
-                if (this.jamTimer >= 50) {
+                if (this.jamTimer >= 36000) {
                     Sounds.explosion.at(this.x, this.y);
                     Fx.explosion.at(this.x, this.y);
                     Fx.smokeCloud.at(this.x, this.y);
